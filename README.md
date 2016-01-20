@@ -2,7 +2,7 @@
 ### Jupyter Notebook Conversion
 
 [![Google Group](https://img.shields.io/badge/-Google%20Group-lightgrey.svg)](https://groups.google.com/forum/#!forum/jupyter)
-[![Build Status](https://travis-ci.org/jupyter/nbconvert.svg?branch=master)](https://travis-ci.org/jupyter/nbconvert)
+[![Build Status](https://travis-ci.org/mkgilbert/nbconvert.svg?branch=markdown_italics_fix)](https://travis-ci.org/mkgilbert/nbconvert)
 [![Documentation Status](https://readthedocs.org/projects/nbconvert/badge/?version=latest)](http://nbconvert.readthedocs.org/en/latest/?badge=latest)
 
 The **nbconvert** tool, `jupyter nbconvert`, converts notebooks to various other
