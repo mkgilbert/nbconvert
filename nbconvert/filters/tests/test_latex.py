@@ -32,12 +32,14 @@ class TestLatex(TestsBase):
             (r'\escapechar=`\A\catcode`\|=0 |string|foo', r'\textbackslash{}escapechar=`\textbackslash{}A\textbackslash{}catcode`\textbackslash{}|=0 |string|foo'),
             (r'# $ % & ~ _ ^ \ { }', r'\# \$ \% \& \textasciitilde{} \_ \^{} \textbackslash{} \{ \}'),
             ('...', r'{\ldots}'),
-            ('\emph{some text to italicize}', r'\normalem \textbackslash{}emph{some text to italicize} \ULforem'),
+            ('\emph{some text to italicize}', r'\normalem \textbackslash{}emph\{some text to italicize\} \ULforem'),
             ('','')]
 
         for test in tests:
             self._try_escape_latex(test[0], test[1])
 
+        # just trying to understand what the expected string output of \emph{some text} is supposed to be
+        print(escape_latex("\emph{some text}"))
 
     def _try_escape_latex(self, test, result):
         """Try to remove latex from string"""
