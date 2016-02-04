@@ -32,7 +32,7 @@ class TestLatex(TestsBase):
             (r'\escapechar=`\A\catcode`\|=0 |string|foo', r'\textbackslash{}escapechar=`\textbackslash{}A\textbackslash{}catcode`\textbackslash{}|=0 |string|foo'),
             (r'# $ % & ~ _ ^ \ { }', r'\# \$ \% \& \textasciitilde{} \_ \^{} \textbackslash{} \{ \}'),
             ('...', r'{\ldots}'),
-            ('\emph{some text to italicize}', r'\normalem \textbackslash{}emph\{some text to italicize\} \ULforem'),
+            ('\emph{some text to italicize}', r'\normalem \textbackslash{}\emph{some text to italicize} \ULforem'),
             ('','')]
 
         for test in tests:
