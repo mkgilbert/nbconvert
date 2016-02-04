@@ -21,7 +21,7 @@ import re
 
 LATEX_RE_SUBS = (
     (re.compile(r'\.\.\.+'), r'{\\ldots}'),
-    (re.compile(r'\\textbackslash\{\}emph\\\{(.*)\\\}'), r'\\normalem \\textbackslash\{\}emph\{\1\} \\ULforem')  # convert underline emph to regular emph
+    (re.compile(r'\\textbackslash{}emph{}'), r'\normalem \textbackslash{}emph{\1} \ULforem')  # convert underline emph to regular emph
 )
 
 # Latex substitutions for escaping latex.
